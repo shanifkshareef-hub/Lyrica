@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { groupByLanguage, languageId, songs } from '../data/songs';
+
+const groups = groupByLanguage();
+---
+
+<Layout>
+  <section class="hero">
+    <h1>My Songs</h1>
+    <p>{songs.length} songs in {groups.length} languages</p>
+  </section>
+
+  <nav class="chips" aria-label="Jump to language">
+    {groups.map((g) => <a class="chip" href={`#${languageId(g.language)}`}>{g.language}</a>)}
+  </nav>
+
+  {
+    groups.map((group) => (
+      <section class="language-section" id={languageId(group.language)}>
+        <h2>
+          {group.language}
+          <span class="count">
+            {group.songs.length} {group.songs.length === 1 ? 'song' : 'songs'}
+          </span>
+        </h2>
+        <ul class="grid">
+          {group.songs.map((song) => (
+            <li class="card">
+              <h3>{song.title}</h3>
+              <p class="meta">
+                {song.language}
+                {song.year && ` · ${song.year}`}
+              </p>
+              <a class="button" href={`/lyrics/${song.slug}`}>
+                View Lyrics
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>

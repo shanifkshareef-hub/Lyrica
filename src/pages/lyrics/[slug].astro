@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import { languageId, songs, type Song } from '../../data/songs';
+
+export const getStaticPaths = (() =>
+  songs.map((song) => ({ params: { slug: song.slug }, props: { song } }))) satisfies GetStaticPaths;
+
+interface Props {
+  song: Song;
+}
+
+const { song } = Astro.props;
+---
+
+<Layout title={song.title} description={`Lyrics of ${song.title} (${song.language})`}>
+  <a class="back" href="/">← Back to songs</a>
+
+  <article>
+    <header class="lyrics-header">
+      <h1>{song.title}</h1>
+      <div class="badges">
+        <a class="badge" href={`/#${languageId(song.language)}`}>{song.language}</a>
+        {song.year && <span>{song.year}</span>}
+      </div>
+    </header>
+
+    <div class="lyrics">{song.lyrics}</div>
+  </article>
+</Layout>
