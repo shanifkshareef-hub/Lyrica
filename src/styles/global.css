@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -106,6 +110,32 @@ main.container {
   color: var(--muted);
 }
 
+.search {
+  margin-bottom: 16px;
+}
+
+.search input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  box-shadow: var(--shadow);
+}
+
+.search input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.no-results {
+  padding: 32px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
 .chips {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +187,7 @@ main.container {
 }
 
 .card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,6 +197,12 @@ main.container {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .card h3 {
@@ -174,15 +211,41 @@ main.container {
 }
 
 .view-link {
+  display: inline-flex;
   flex-shrink: 0;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: var(--accent);
+  transition: background 0.15s;
 }
 
-.view-link:hover {
-  text-decoration: underline;
+/* Stretch the link over the whole card so clicking anywhere on it opens the lyrics. */
+.view-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+}
+
+.view-link svg {
+  transition: transform 0.15s;
+}
+
+.card:hover .view-link {
+  background: var(--accent-soft);
+}
+
+/* Nudge the icon, not the link: a transform on the link would shrink its stretched click area. */
+.card:hover .view-link svg {
+  transform: translateX(2px);
+}
+
+.view-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Lyrics page */

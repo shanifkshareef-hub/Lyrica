@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { groupByLanguage, languageId, songs } from '../data/songs';
 
 const groups = groupByLanguage();
+const songCount = (n: number) => `${n} ${n === 1 ? 'song' : 'songs'}`;
 ---
 
 <Layout>
@@ -11,8 +12,24 @@ const groups = groupByLanguage();
     <p>{songs.length} songs in {groups.length} languages</p>
   </section>
 
+  <div class="search">
+    <input
+      id="search"
+      type="search"
+      placeholder="Search by title or lyrics…"
+      aria-label="Search songs"
+      autocomplete="off"
+    />
+  </div>
+
   <nav class="chips" aria-label="Jump to language">
-    {groups.map((g) => <a class="chip" href={`#${languageId(g.language)}`}>{g.language}</a>)}
+    {
+      groups.map((g) => (
+        <a class="chip" href={`#${languageId(g.language)}`} data-language={languageId(g.language)}>
+          {g.language}
+        </a>
+      ))
+    }
   </nav>
 
   {
@@ -20,16 +37,23 @@ const groups = groupByLanguage();
       <section class="language-section" id={languageId(group.language)}>
         <h2>
           {group.language}
-          <span class="count">
-            {group.songs.length} {group.songs.length === 1 ? 'song' : 'songs'}
-          </span>
+          <span class="count">{songCount(group.songs.length)}</span>
         </h2>
         <ul class="grid">
           {group.songs.map((song) => (
-            <li class="card">
+            <li class="card" data-search={`${song.title}\n${song.lyrics}`}>
               <h3>{song.title}</h3>
-              <a class="view-link" href={`/lyrics/${song.slug}`}>
-                View Lyrics
+              <a class="view-link" href={`/lyrics/${song.slug}`} aria-label={`View lyrics of ${song.title}`}>
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </li>
           ))}
@@ -37,4 +61,46 @@ const groups = groupByLanguage();
       </section>
     ))
   }
+
+  <p id="no-results" class="no-results" hidden>No songs found.</p>
 </Layout>
+
+<script>
+  const normalize = (text: string) => text.toLowerCase().replace(/\s+/g, ' ').trim();
+
+  const input = document.querySelector<HTMLInputElement>('#search')!;
+  const noResults = document.querySelector<HTMLElement>('#no-results')!;
+  const sections = [...document.querySelectorAll<HTMLElement>('.language-section')];
+  const cards = [...document.querySelectorAll<HTMLElement>('.card')].map((card) => ({
+    card,
+    text: normalize(card.dataset.search ?? ''),
+  }));
+
+  function filter() {
+    const query = normalize(input.value);
+    for (const { card, text } of cards) card.hidden = !text.includes(query);
+
+    let total = 0;
+    for (const section of sections) {
+      const visible = section.querySelectorAll('.card:not([hidden])').length;
+      total += visible;
+      section.hidden = visible === 0;
+      section.querySelector('.count')!.textContent = `${visible} ${visible === 1 ? 'song' : 'songs'}`;
+      const chip = document.querySelector<HTMLElement>(`.chip[data-language="${section.id}"]`);
+      if (chip) chip.hidden = visible === 0;
+    }
+
+    noResults.hidden = total > 0;
+    noResults.textContent = `No songs found for "${input.value.trim()}".`;
+  }
+
+  input.addEventListener('input', filter);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      input.value = '';
+      filter();
+    }
+  });
+  // Re-apply if the browser restored a previous query (e.g. after pressing Back).
+  if (input.value) filter();
+</script>
