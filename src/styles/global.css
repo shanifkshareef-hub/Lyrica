@@ -158,9 +158,10 @@ main.container {
 
 .card {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 18px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -172,26 +173,16 @@ main.container {
   font-size: 1.1rem;
 }
 
-.card .meta {
-  margin: 0 0 12px;
-  color: var(--muted);
-  font-size: 0.875rem;
-}
-
-.button {
-  align-self: flex-start;
-  margin-top: auto;
-  padding: 8px 16px;
-  border-radius: 10px;
-  background: var(--accent);
-  color: var(--accent-text);
+.view-link {
+  flex-shrink: 0;
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.button:hover {
-  filter: brightness(1.1);
+.view-link:hover {
+  text-decoration: underline;
 }
 
 /* Lyrics page */

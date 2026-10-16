@@ -28,11 +28,7 @@ const groups = groupByLanguage();
           {group.songs.map((song) => (
             <li class="card">
               <h3>{song.title}</h3>
-              <p class="meta">
-                {song.language}
-                {song.year && ` · ${song.year}`}
-              </p>
-              <a class="button" href={`/lyrics/${song.slug}`}>
+              <a class="view-link" href={`/lyrics/${song.slug}`}>
                 View Lyrics
               </a>
             </li>

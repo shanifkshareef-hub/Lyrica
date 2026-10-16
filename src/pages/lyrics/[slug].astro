@@ -20,9 +20,7 @@ const { song } = Astro.props;
     <header class="lyrics-header">
       <h1>{song.title}</h1>
       <div class="badges">
-        <a class="badge" href={`/#${languageId(song.language)}`}>{song.language}</a>
-        {song.year && <span>{song.year}</span>}
-      </div>
+        <a class="badge" href={`/#${languageId(song.language)}`}>{song.language}</a>      </div>
     </header>
 
     <div class="lyrics">{song.lyrics}</div>
