@@ -40,5 +40,12 @@ const pageTitle = title ? `${title} · Lyrica` : 'Lyrica';
     <footer class="site-footer">
       <div class="container">© {new Date().getFullYear()} Lyrica</div>
     </footer>
+    <script>
+      // Save the whole site for offline use (see src/service-worker.js). Skipped in
+      // dev so saved pages never hide your edits.
+      if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
   </body>
 </html>
