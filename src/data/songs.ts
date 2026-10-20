@@ -721,6 +721,404 @@ Ohooo….ooooo…oo….`,
 हवा कुछ कहती है, धूप मुस्काती है
 हर मोड़ पे ज़िंदगी नया गीत गाती है`,
   },
+  {
+    slug: 're-kabira',
+    title: 'Re Kabira',
+    language: 'Hindi',
+    lyrics: `Banno re banno meri chali sasuraal ko
+Ankhiyon mein paani de gayi
+Duaa mein meethi gud dhaani le gayi [x2]
+
+Re Kabira maan jaa
+Re Faqeera yun na ja
+Aaja tujhko pukaare teri parchhaaiyan
+Re Kabira maan ja
+Re Faqeera yun na ja
+Kaisa tu hai nirmohi kaisa harjaaiya
+
+Re Kabira, Re Kabira
+Re Fakeera, Re Fakeera... [x2]
+
+Tooti chaarpai wohi thandi purvaai rasta dekhe
+Doodhoon ki malaai wohi
+Mitti ki suraahi rasta dekhe... [x2]
+
+Ho Doodhoon ki malaai wohi
+Mitti ki suraahi rasta dekhe...
+
+Gudiya ri gudiya tera gudda perdesiya
+Jodi aasmani ho gayi
+Shagun pe dekho shaad maani ho gayi [x2]
+
+Re Kabira maan jaa
+Re Faqeera yun na jaa
+Aaja tujhko pukaare teri parchhaaiyan
+Re Kabira maan ja
+Re Faqeera yun na ja
+Kaisa tu hai nirmohi kaisa harjaaiya
+
+Re Kabira, Re Kabira...`,
+  },
+  {
+    slug: 'tu-jaane-na',
+    title: 'Tu Jaane Na',
+    language: 'Hindi',
+    lyrics: `Kaise Bataaye Kyun Tujhko Chaahe
+Yaara Bata Na Paaye
+Baatein Dilon Ki Dekho Jo Baaki
+Aankhein Tujhe Samjhaaye
+Tu Jaane Na Aaa
+Tu Jaane Na
+Tu Jaane Na Aaa
+Tu Jaane Na
+
+Milake Bhi Hum Na Mile
+Tumse Na Jaane Kyun
+Milon Ke Hai Faasle
+Tumse Na Jaane Kyun
+Anjaane Hai Silsile
+Tumse Na Jaane Kyun
+Sapne Hai Palakon Tale
+Tumse Na Jaane Kyun
+
+Kaise Bataaye Kyun Tujhko Chaahe
+Yaara Bata Na Paaye
+Baatein Dilon Ki Dekho Jo Baaki
+Aankhein Tujhe Samjhaaye
+Tu Jaane Na Aaa
+Tu Jaane Na
+Tu Jaane Na Aaa
+Tu Jaane Na
+
+Nigaahon Mein Dekho Meri
+Jo Hai Bas Gaya
+Woh Hai Milata Tumse Hubahu
+O O O Jaane Teri Aankhein Thi Ya
+Baatein Thi Wajah
+Huye Tum Jo Dil Ki Aarzoo
+Tum Paas Hoke Bhi
+Tum Aas Hoke Bhi
+Ehsaas Hoke Bhi
+Apne Nahi Aise Hai
+Humko Gile Tumse Na Jaane Kyun
+Milon Ke Hai Faasle
+Tumse Na Jaane Kyun
+Tu Jaane Na Aaa
+Tu Jaane Na
+Tu Jaane Na Aaa
+Tu Jaane Na
+
+Ooo Jaane Na Jaane Na Jaane Na... aaaaaaaaa aaa
+Tu Jaane Na
+
+Khayalon Mein Lakhon Baatein Yun Toh Keh Gayaaaa
+Bola Kuch Na Tere Samne
+Oooo Hue Na Begaane Bhi Tum Hoke Aur Ke
+Dekho Tum Na Mere Hi Bane
+Afsos Hota Hai Dil Bhi Yeh Rota Hai
+Sapne Sanjota Hai Pagla Hua Soche Yeh
+Hum The Mile Tumse Na Jaane Kyun
+
+Meelon Ke Hai Faasle Tumse Na Jaane Kyun
+Anjaane Hai Silsale Tumse Na Jaane Kyun
+Sapne Hai Palko Tale Tumse Na Jaane Kyun
+
+Hooooooohh
+
+Kaise Bataaye Kyun Tujhko Chaahe
+Yaara Bata Na Paaye
+Baatein Dilon Ki Dekho Jo Baaki
+Aankhein Tujhe Samjhaaye
+Tu Jaane Na, Tu Jaane Na
+Tu Jaane Na, Tu Jaane Na`,
+  },
+  {
+    slug: 'arz-kiya-hai',
+    title: 'Arz Kiya Hai',
+    language: 'Hindi',
+    lyrics: `Kaayar jo the, woh shaayar bane
+Ab kya-kya karein yeh ishq mein
+Na kehte the kuch jo, lage khoj mein
+Kya lafz chune, naye aashiq yeh
+
+Ishq mein tere hain Faiz bane
+Arz kiya hai
+Humne bhi likha kuch tere baare mein hai
+
+Aise tu lage ki gulaab hai
+Aur aise tu lage ki gulaab hai
+Baaghon mein dil ke khilke inn fizaaon mein chhaye ho, haaye
+Aur waise hum toh tere hi ghulaam hain
+Aur waise hum toh tere hi ghulaam hain
+Baadshah dil ke, teri baazi mein jo tu chaahe toh
+
+Doobe dilo ki kya naav banoon?
+Main khud tair paaoon na aankhon mein
+Shaayar ki fitrat mein hi doobna
+Main kya hi ladoon toofano se
+
+Ishq mein tere hain Faiz bane
+Arz kiya hai
+Humne bhi likha kuch tere baare mein hai
+
+Haathon ko sambhale mere haathon mein
+Kaise haathon ko sambhale mere haathon mein
+Jab tak neend na aaye, inn lakeeron mein baatein ho, haaye
+
+Sa-re-pa-ga-re-sa, re-ga-pa-ga, pa-ni, pa-ni
+Sa-re-pa-ni, pa-ga, pa-ma, ga-ma, ga-re, ga-re, sa-ni-sa
+Sa-re-sa-ni-pa-ni, sa-ga-re, re-ga-pa-ni-sa-ga
+Ga-re-sa-re-sa-ni, ma-dha-pa
+Pa-ni-sa-ni-pa-ni, pa-ga-pa-re-re-sa
+Re-ga, re-ga, ma-dha, pa-ni, pa-ni, sa-ni-dha
+Sa-ni, sa-ni, pa-dha, pa-ma, ga-ma-ga
+
+Haan, sab ne toh sab keh diya hai
+Kya hi kahoon jo abhi bhi ankaha hai
+Main, haaye, na Mirza, na Mir
+Na maahir, na zaahir karoon kuch naya main
+Haaye, par jo bhi likha hai, jiya hai
+Haan, jiya hai
+Aise, aise, aise kaise? Waise jaise
+
+Jaise main padhoon mere dil mein jo
+Meri aankhein bhi padhe teri aankhon ko
+Kya yeh mehfil mein baithein ya uthein daud jaane ko? Haaye
+Teri aankhon mein taareefon ki talaash hai
+Meri mehfil tere jaane se veeraan hai
+Main bas shaayar bana hoon sirf tu sun'ne aaye toh
+
+Shaayad shaayar bana hoon
+Sirf tu sun'ne aaye toh`,
+  },
+  {
+    slug: 'paani-da-rang',
+    title: 'Paani Da Rang',
+    language: 'Hindi',
+    lyrics: `Paani da rang vekh ke
+Paani da rang vekh ke
+Paani da rang vekh ke
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+
+Mahiya na aaya mera
+Mahiya na aaya
+Mahiya na aaya mera
+Maahiya na aaya
+Ranjhna na aaya mera
+Mahiya na aaya
+Mahiya na aaya mera
+Ranjhna na aaya
+Ankhaan daa noor vekh ke
+Ankhaan daa.. noor vekh ke
+Akhiyan jo hanju rul de
+Akhiyan jo hanju rul de
+Akhiyan jo hanju rul de
+
+Kamli ho gayi tere bina
+Aaja raanjhan mere
+Kamli ho gayi tere bina
+Aaja raanjhan mere
+Baarish barkha sab kuch beh gayi
+Aaya ni jind mere
+Baarish barkha sab kuch beh gayi
+Aaya ni jind mere
+Ankhaan da noor vekh ke
+Ankhaan da.. noor vekh ke
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+
+Kothe utte behke ankhiyan milounde
+Na jaana hume tu kabhi chhod
+Tere utte mar da
+Pyaar tenu kar da
+Milega tujhe na koi aur
+Tu bhi aa sabko chhod ke
+Tu bhi aa sabko chhod ke Meri
+
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Paani da rang vekh ke
+Paani da rang vekh ke
+Paani da rang vekh ke
+Ankhiyan jo hanju rul de
+
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de
+Ankhiyan jo hanju rul de`,
+  },
+  {
+    slug: 'satranga',
+    title: 'Satranga',
+    language: 'Hindi',
+    lyrics: `Ho~ Ho~
+Ho~
+Aadha Tera Ishq
+Aadha Mera
+Aise Ho Pura Chandrama
+Ho Taara Tera Ikk
+Taara Mera
+Baki Andhera Aasman
+Na Tere Sang Laage
+Bandhe Jo Pipal Pe Dhaage
+Ye Surme Ke Dhaare
+Behte Hai Nazre Bacha Ke
+Badrang Mein Satranga Hai
+Ye Ishq Re
+Jogi Main Aur Ganga
+Hai Ye Ishq Re
+Badrang Mein Satranga Hai
+Ye Ishq Re
+Jogi Main Aur Ganga
+Hai Ye Ishq Re
+Ho~ Ho
+Ho~
+
+Mathe Se
+Laga Loon Haath
+Chhu Ke Main
+Pair Tere
+Ho Rakh Loon Main
+Tan Pe Zakhm
+Bana Saare
+Bair Tere
+Rukna Ni Tu
+Hunn Rusna Ni Main
+Tera Ni Reha
+Te Na Khud Da Vi Main
+Duniya Tu Hi Hai Meri
+Par Na Aana Ab Na Aana
+Main Ni Aana
+Shehar Tere
+
+Jo Phere Sang Lage
+Rakhte Wo Humko Jala Ke
+Wo Waade Jhoothe Waade
+Le Ja Tu Kasme Laga Ke
+Rag Rag Mein
+Malanga
+Hai Ye Ishq Re
+Kyu Lahu Mein Hi
+Ranga Hai Yeh Ishq Re
+Ho Badrang Mein Satranga
+Hai Ye Ishq Re
+Jogi Main Aur Ganga
+Hai Ye Ishq Re
+Ho Ho~
+Ho~
+Oooo
+Ho Ho~
+Ho~
+Oooo
+Tu Meri Sari Yaade
+Pani Mein Aaj Baha De
+Ye Teri Bheegi Aankhen
+Rakh Loon Labon Se Laga Ke
+Main Samandar Parinda
+Hai Ye Ishq Re
+Mann Maatam Aur Zinda
+Hai Ye Ishq Re
+Ho Badrang Mein Satranga
+Hai Ye Ishq Re
+Jogi Main Aur Ganga
+Hai Ye Ishq Re~
+Ho~~ Ho~~~
+Badrang Mein Satranga
+Hai Ye Ishq Re
+Jogi Main Aur Ganga
+Hai Ye Ishq Re~`,
+  },
+  {
+    slug: 'ye-tune-kya-kiya',
+    title: 'Ye Tune Kya Kiya',
+    language: 'Hindi',
+    lyrics: `Ishq woh bala hai
+Ishq woh bala hai
+Jisko chhuaa isne woh jala hai
+Dil se hota hai shuru
+Dil se hota hai shuru
+Par kambakht sar pe chadha hai
+Kabhi khud se, kabhi khuda se
+Kabhi zamaane se lada hai
+Itna hua badnaam phir bhi
+Har zubaan pe ada hai
+
+Ishq ki.. saazishein
+Ishq ki.. baaziyaan
+Haara main khel ke
+Do dilon ka juaa
+
+Kyun tune meri fursat ki
+Kyun dil mein itni harqat ki
+Ishaq mein itni barqat ki
+Ye tune kya kiya..
+
+Phiru ab maara maara main
+Chaand se bichhda taara main
+Dil se itna kyun haara main
+Ye tune kya kiya..
+
+Saari duniya se jeet ke
+main aaya hoon idhar
+Tere aage hi main haara
+kiya tune kya asar
+
+Main dil ka raaz kehta hoon
+Ke jab jab saansein leta hoon
+Tera hi naam leta hoon
+Ye tune kya kiya
+
+Meri baahon ko teri saanson ki jo
+Aadatein lagi hain waisi
+Jee leta hoon ab main thoda aur
+
+Meri dil ki ret pe
+Aankhon ki jo pade parchhai teri
+Pee leta hoon tab main thoda aur
+
+Jaane kaun hai tu meri
+Main naa jaanu ye magar
+Jahaan jaaun main karoon main wahaan
+Tera hi zikar
+
+Mujhe tu raazi lagti hai
+Jeeti hui baazi lagti hai
+Tabiyat taazi lagti hai
+Ye tune kya kiya
+
+Main dil ka raaz kehta hoon
+Ke jab jab saansein leta hoon
+Tera hi naam leta hoon
+Ye tune kya kiya
+
+Dil karta hai, teri baatein sunu
+Saude main adhoore chunu
+Muft ka hua ye faayda
+Kyun khud ko main barbaad karoon
+Fanaa hoke tunhse miloon
+Ishq ka ajab hai qaayda
+Teri raahon se jo guzri hain meri dagar
+Main aage badh gaya hoon
+thoda hoke be-fikar
+
+Kaho toh, kis se marzi loon
+Kaho toh, kis ko arzi doon
+Hansta ab thoda farzi hoon
+Ye tune kya kiya
+
+Main dil ka raaz kehta hoon
+Ke jab-jab saansein leta hoon….
+
+Ishq ki.. saazishein
+Ishq ki.. baaziyaan
+Haara main khel ke
+Do dilon ka juaa`,
+  },
 ];
 
 export interface LanguageGroup {
