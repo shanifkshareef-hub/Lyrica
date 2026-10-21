@@ -723,7 +723,7 @@ Ohooo….ooooo…oo….`,
   },
   {
     slug: 're-kabira',
-    title: 'Re Kabira',
+    title: 'Re Kabira - scale A major',
     language: 'Hindi',
     lyrics: `Banno re banno meri chali sasuraal ko
 Ankhiyon mein paani de gayi
@@ -954,7 +954,7 @@ Ankhiyan jo hanju rul de`,
   },
   {
     slug: 'satranga',
-    title: 'Satranga',
+    title: 'Satranga - scale C major',
     language: 'Hindi',
     lyrics: `Ho~ Ho~
 Ho~
@@ -1118,6 +1118,35 @@ Ishq ki.. saazishein
 Ishq ki.. baaziyaan
 Haara main khel ke
 Do dilon ka juaa`,
+  },
+  {
+    slug: 've-kamleya',
+    title: 'Ve Kamleya - scale C major',
+    language: 'Hindi',
+    lyrics: `Ve kamleya, ve kamleya
+Ve kamleya, mere naadaan dil
+Ve kamleya, ve kamleya
+Ve kamleya, mere naadaan dil
+
+Do nainon ke pecheeda sau galiyaare
+In mein kho kar tu milta hai kahan
+Tujhko ambar se pinjre zyada pyaare
+Udd jaa kehne se sunta bhi tu hai kahan
+
+Gal sun le aa, gal sun le aa
+Ve kamleya mere naadaan dil
+Ve kamleya ve kamleya
+
+Ve kamleya
+Mere naadaan dil, naadaan dil
+
+Jaa karna hai toh pyaar kar
+Zid poori phir ik baar kar
+Kamleya, ve kamleya
+
+Manmarzi kar ke dekh le
+Badle mein sab kuchh haar kar
+Kamleya, ve kamleya`,
   },
 ];
 
