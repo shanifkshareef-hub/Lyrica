@@ -19,10 +19,63 @@ const { song } = Astro.props;
   <article>
     <header class="lyrics-header">
       <h1>{song.title}</h1>
-      <div class="badges">
-        <a class="badge" href={`/#${languageId(song.language)}`}>{song.language}</a>      </div>
+      <div class="lyrics-toolbar">
+        <div class="badges">
+          <a class="badge" href={`/#${languageId(song.language)}`}>{song.language}</a>
+        </div>
+        <div class="zoom" role="group" aria-label="Lyrics text size">
+          <button type="button" data-zoom="out" aria-label="Zoom out" title="Zoom out">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4M8 11h6" />
+            </svg>
+          </button>
+          <button type="button" class="zoom-level" data-zoom="reset" title="Reset text size">100%</button>
+          <button type="button" data-zoom="in" aria-label="Zoom in" title="Zoom in">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4M8 11h6M11 8v6" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
 
+    <script is:inline>
+      // Apply the saved text size before the lyrics are drawn, so they don't jump.
+      try {
+        const scale = Number(localStorage.getItem('lyrica:lyrics-scale'));
+        if (scale > 0) document.documentElement.style.setProperty('--lyrics-scale', String(scale));
+      } catch {}
+    </script>
     <div class="lyrics">{song.lyrics}</div>
   </article>
 </Layout>
+
+<script>
+  const STORAGE_KEY = 'lyrica:lyrics-scale';
+  const MIN = 0.8;
+  const MAX = 2;
+  const STEP = 0.1;
+
+  const root = document.documentElement;
+  const zoomOut = document.querySelector<HTMLButtonElement>('[data-zoom="out"]')!;
+  const zoomIn = document.querySelector<HTMLButtonElement>('[data-zoom="in"]')!;
+  const reset = document.querySelector<HTMLButtonElement>('[data-zoom="reset"]')!;
+
+  function setScale(value: number) {
+    const scale = Math.round(Math.min(MAX, Math.max(MIN, value)) * 10) / 10;
+    root.style.setProperty('--lyrics-scale', String(scale));
+    reset.textContent = `${Math.round(scale * 100)}%`;
+    zoomOut.disabled = scale <= MIN;
+    zoomIn.disabled = scale >= MAX;
+    try {
+      localStorage.setItem(STORAGE_KEY, String(scale));
+    } catch {}
+    return scale;
+  }
+
+  // The inline script above has already applied any saved size.
+  let scale = setScale(Number(root.style.getPropertyValue('--lyrics-scale')) || 1);
+  zoomOut.addEventListener('click', () => (scale = setScale(scale - STEP)));
+  zoomIn.addEventListener('click', () => (scale = setScale(scale + STEP)));
+  reset.addEventListener('click', () => (scale = setScale(1)));
+</script>

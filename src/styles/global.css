@@ -261,12 +261,78 @@ main.container {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
 }
 
+.lyrics-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
 .badges {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
   color: var(--muted);
+}
+
+.zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.zoom button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.zoom button:hover:not(:disabled) {
+  background: var(--accent-soft);
+}
+
+.zoom button:disabled {
+  color: var(--muted);
+  opacity: 0.5;
+  cursor: default;
+}
+
+.zoom button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.zoom svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.zoom .zoom-level {
+  min-width: 52px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 .badge {
@@ -285,7 +351,8 @@ main.container {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  font-size: 1.125rem;
+  /* --lyrics-scale is set by the zoom buttons on the lyrics page. */
+  font-size: calc(1.125rem * var(--lyrics-scale, 1));
   line-height: 1.9;
   white-space: pre-line;
 }
@@ -293,6 +360,6 @@ main.container {
 @media (max-width: 600px) {
   .lyrics {
     padding: 20px;
-    font-size: 1.05rem;
+    font-size: calc(1.05rem * var(--lyrics-scale, 1));
   }
 }
