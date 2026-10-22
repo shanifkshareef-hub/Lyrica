@@ -3947,6 +3947,192 @@ Tera mera rishta purana
 Tera mera rishta purana
 Oh tera mera…a… purana`,
   },
+  {
+    slug: 'khwaja-mere-khwaja',
+    title: 'Khwaja Mere Khwaja',
+    language: 'Hindi',
+    lyrics: `Khwaja ji iiii…. khwaja
+Khwaja jiiiii, khwaja
+Jiiiiii, khwaja jiii
+
+Ya garib nawaz
+Ya garib nawaz
+Ya garib nawaz
+Ya moinuddin
+Ya moinuddin
+Ya khwaja ji
+Ya khwaja ji
+Ya khwaja ji (4)
+
+Khwaja mere khwaja
+Dil mein sama ja
+Shaho ka shah tu
+Ali ka dulara
+
+Khwaja mere khwaja
+Dil mein sama ja
+Shaho ka shah tu
+Ali ka dulara
+
+{Khwaja mere khwaja
+Dil mein sama ja} (2)
+
+{Beqaso ki taqdeer
+Tune hai sawari} (2)
+
+Khwaja mere khwaja
+
+Aaa…
+Tere darbar mein khwaja
+Door toh hai dekha
+
+Aaaa…
+Tere darbar mein khwaja
+Sar jhuka te hai auliya
+Tu hai unalwali khwaja
+Rutba hai pyara
+Chahne se tujhko khwaja
+Ji mustafa ko paya
+
+Khwaja mere khwaja
+Dil mein sama ja
+Shaho ka shah tu
+Ali ka dulara
+
+Mere peer ka sadka
+Mere peer ka sadka aaaaa…..
+Hai mere peer ka sadka
+Tera daman hai thama
+
+Khawajajiii
+
+Tali har bala humari
+Chaya hai khumar tera
+Jitna bhi rashk kare beshak
+Toh kam hai ae mere khwaja
+Tere kadmo ko mere rehnuma
+Nahi chodna gawara
+
+Khwaja mere khwaja
+Dil mein sama ja
+Shaho ka shah tu
+Ali ka dulara
+
+Khwaja mere khwaja
+Dil mein sama ja
+Shaho ka shah tu
+Ali ka dulara
+
+{Khwaja mere khwaja
+Dil mein sama ja} (2)
+
+{Beqaso ki taqdeer
+Tune hai sawari} (2)
+
+Khwaja ji khwaja ji….`,
+  },
+  {
+    slug: 'kun-faya-kun',
+    title: 'Kun Faya Kun',
+    language: 'Hindi',
+    lyrics: `Ya Nizamuddin Auliya
+Ya Nizamuddin Sarkar
+
+Kadam badha le
+Haddon ko mita le
+Aaja khalipan mein pee ka ghar tera
+Tere bin khali aaja khalipan mein
+Tere bin khali aaja khalipan mein
+
+Oooooo..Oooooo..
+Ooooooo...oooooooo...
+Rangreza, Rangreza, Rangreza aa...
+Rangrezaaa...
+
+Kun faya kun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Wo jo mujhme samaya wo jo tujhme samaya
+Maula wahi wahi maaya
+Wo jo mujhme samaya wo jo tujhme samaya
+Maula wahi wahi maaya
+Kun fayakun Kun fayakun
+
+Sadq Allahu Ali-ul-Azeem
+
+Rangreza rang mera tann mera mann
+Le le rangaai chahe tann chahe mann
+Rangreza rang mera tann mera mann
+Le le rangaai chahe tann chahe mann
+
+Sajra savera mere tann barse
+Kajra andhera teri jalti lau
+
+Sajra savera mere tann barse
+Kajra andhera teri jalti lau
+Qatra mila jo tere darr par se
+O Maulaa... Maulaa... aa...
+
+Kun fayakun Kun fayakun
+Kun Fayakun Kun fayakun
+Kun fayakun kun fayakun fayakun
+Fayakun fayakun fayakun
+Aaa Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Kun fayakun Kun fayakun
+
+Sadq Allahu Ali-ul-Azeem
+Sadaqa-Rosooluh-ul-Nabi-ul-Kareem
+SalAllah hu alayhi wasallam
+SalAllah hu alayhi wasallam
+
+Hooo... mujh pe karam sarkar tera
+Araz tujhe kar de mujhe, mujhse hi riha
+Ab mujhko bhi ho deedar mera
+Kar de mujhe, mujh se hi riha
+Mujh seee... hi rihaaa...
+
+Mann ke mere ye bharam
+Kachche mere ye karam
+Leke chale hain kahaan
+Main to jaanu hi na
+
+Tu hai mujh mein samaaya
+Kahaan leke mujhe aaya
+Main hoon tujh mein samaaya
+Tere peechhe chala aaya
+Tera hi main ik saaya
+Tune mujhko banaya
+Main toh jag ko naa bhaya
+Tune gale se lagaya
+Haq tu hi hai khudaya
+Sach tu hi hai khudaya Aaa...
+
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Kun fayakun Kun fayakun fayakun
+Fayakun fayakun fayakun
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Jab kahin pe kuch nahi bhi nahi tha
+Wahi tha Wahi tha Wahi tha Wahi tha
+Kun fayakun Kun fayakun
+
+Sadq Allahu Ali-ul-Azeem
+Sadaqa-Rosooluh-ul-Nabi-ul-Kareem
+SalAllah hu alayhi wasallam`,
+  },
 ];
 
 export interface LanguageGroup {
